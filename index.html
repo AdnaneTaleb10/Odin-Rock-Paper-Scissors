@@ -7,8 +7,51 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <p style="font-size: 50px;">hello world</p>
+    <h1 class="game-title">Rock Paper Scissors</h1>
+    <p class="game-rule">The first to 5 wins!</p>
 
+    <div class="game-container">
+        <div class="human-container">
+            <p class="player">Human</p>
+
+            <div class="human-choices">
+                <div class="choice" onclick="getComputerChoice()">
+                    <img class="choice-image" src="images/rock.png" alt="">
+                    <p class="choice-name">Rock</p>
+                </div>
+
+                <div class="choice" onclick="getComputerChoice()">
+                    <img class="choice-image" src="images/paper.png" alt="">
+                    <p class="choice-name">Paper</p>
+                </div>
+
+                <div class="choice" onclick="getComputerChoice()">
+                    <img class="choice-image" src="images/scissors.png" alt="">
+                    <p class="choice-name">Scissors</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="computer-container">
+            <p class="player">Computer</p>
+
+            <div class="choice">
+                <img class="choice-image" id="computer-choice-image" src="" alt="">
+                <p class="choice-name" id="computer-choice-text"></p>
+            </div>
+        </div>
+
+
+    </div>
+    
+    <div class="game-info">
+        <div class="play-again">Play Again</div>
+
+        <div class="statistics">
+            <div class="decision">fkqsldjfkqj</div>
+            <div class="round">Won = 0 | Lost = 0 | Draw = 0</div>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
