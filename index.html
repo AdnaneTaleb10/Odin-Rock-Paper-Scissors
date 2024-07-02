@@ -15,18 +15,18 @@
             <p class="player">Human</p>
 
             <div class="human-choices">
-                <div class="choice" onclick="getComputerChoice()">
-                    <img class="choice-image" src="images/rock.png" alt="">
+                <div class="choice">
+                    <img class="choice-image" src="images/rock.png">
                     <p class="choice-name">Rock</p>
                 </div>
 
-                <div class="choice" onclick="getComputerChoice()">
-                    <img class="choice-image" src="images/paper.png" alt="">
+                <div class="choice">
+                    <img class="choice-image" src="images/paper.png">
                     <p class="choice-name">Paper</p>
                 </div>
 
-                <div class="choice" onclick="getComputerChoice()">
-                    <img class="choice-image" src="images/scissors.png" alt="">
+                <div class="choice">
+                    <img class="choice-image" src="images/scissors.png">
                     <p class="choice-name">Scissors</p>
                 </div>
             </div>
@@ -36,7 +36,7 @@
             <p class="player">Computer</p>
 
             <div class="choice">
-                <img class="choice-image" id="computer-choice-image" src="" alt="">
+                <img class="choice-image" id="computer-choice-image" src="">
                 <p class="choice-name" id="computer-choice-text"></p>
             </div>
         </div>
@@ -48,8 +48,8 @@
         <div class="play-again">Play Again</div>
 
         <div class="statistics">
-            <div class="decision">fkqsldjfkqj</div>
-            <div class="round">Won = 0 | Lost = 0 | Draw = 0</div>
+            <div class="decision"></div>
+            <div class="round">Won = <span class="won">0</span> | Lost = <span class="lost">0</span> | Draw = <span class="draw">0</span></div>
         </div>
     </div>
     <script src="app.js"></script>
