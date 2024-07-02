@@ -38,16 +38,6 @@ function playGame() {
     const decision = document.querySelector(".decision");
     const playAgain = document.querySelector(".play-again");
 
-/*     humanChoices.forEach((choice) => {
-        choice.addEventListener("click" , () => {
-            if(!gameState.gameplayEnabled) return;
-            gameState.humanChoice = choice.querySelector(".choice-name").textContent.toLowerCase();
-            gameState.computerChoice = getComputerChoice()
-            updateComputerChoice();
-            playRound();
-        })
-    }) */
-
     function handleClick(){
         if(!gameState.gameplayEnabled) return;
         gameState.humanChoice = event.currentTarget.querySelector(".choice-name").textContent.toLowerCase();
@@ -134,7 +124,5 @@ function playGame() {
         computerChoicePara.textContent = "";   
     }
 }
-
-
 
 playGame();
